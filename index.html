@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VillageCar - Modern Developer Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-car"></i>
+                <span>VillageCar</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="btn-signin">Sign In</button>
+                <button class="btn-signup">Sign Up</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to <span class="gradient-text">VillageCar</span></h1>
+            <p class="hero-subtitle">The modern platform for collaborative development and project management</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Get Started</button>
+                <button class="btn btn-secondary">Learn More</button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3>10K+</h3>
+                    <p>Active Users</p>
+                </div>
+                <div class="stat">
+                    <h3>50K+</h3>
+                    <p>Projects</p>
+                </div>
+                <div class="stat">
+                    <h3>100K+</h3>
+                    <p>Contributions</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-illustration">
+            <div class="floating-card">
+                <i class="fas fa-code"></i>
+            </div>
+            <div class="floating-card">
+                <i class="fas fa-git"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Powerful Features</h2>
+            <p class="section-subtitle">Everything you need for modern development</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>Repository Management</h3>
+                    <p>Manage your projects with version control, branching, and collaboration tools.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Team Collaboration</h3>
+                    <p>Work seamlessly with your team using real-time updates and comments.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>Pull Requests</h3>
+                    <p>Review code changes, request reviews, and merge with confidence.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Advanced Search</h3>
+                    <p>Find repositories, code, and projects instantly with powerful search.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics</h3>
+                    <p>Track contributions, activity, and project metrics in real-time.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security</h3>
+                    <p>Enterprise-grade security with two-factor authentication and encryption.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Showcase of amazing community projects</p>
+            
+            <div class="search-bar">
+                <input type="text" id="projectSearch" placeholder="Search projects...">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Web Framework</h3>
+                        <span class="badge badge-blue">Featured</span>
+                    </div>
+                    <p>A modern, lightweight framework for building web applications.</p>
+                    <div class="project-stats">
+                        <span><i class="fas fa-star"></i> 2.5K</span>
+                        <span><i class="fas fa-code-branch"></i> 340</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Framework</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Data Analytics Tool</h3>
+                        <span class="badge badge-purple">Popular</span>
+                    </div>
+                    <p>Powerful analytics platform for data visualization and insights.</p>
+                    <div class="project-stats">
+                        <span><i class="fas fa-star"></i> 1.8K</span>
+                        <span><i class="fas fa-code-branch"></i> 280</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Data</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Mobile App SDK</h3>
+                        <span class="badge badge-green">Trending</span>
+                    </div>
+                    <p>Complete SDK for building cross-platform mobile applications.</p>
+                    <div class="project-stats">
+                        <span><i class="fas fa-star"></i> 3.2K</span>
+                        <span><i class="fas fa-code-branch"></i> 520</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">React Native</span>
+                        <span class="tag">Mobile</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Cloud Storage</h3>
+                        <span class="badge badge-orange">Updated</span>
+                    </div>
+                    <p>Secure cloud storage solution with advanced sync capabilities.</p>
+                    <div class="project-stats">
+                        <span><i class="fas fa-star"></i> 1.5K</span>
+                        <span><i class="fas fa-code-branch"></i> 210</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Cloud</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>AI Assistant</h3>
+                        <span class="badge badge-red">Hot</span>
+                    </div>
+                    <p>Intelligent AI assistant powered by machine learning models.</p>
+                    <div class="project-stats">
+                        <span><i class="fas fa-star"></i> 4.1K</span>
+                        <span><i class="fas fa-code-branch"></i> 680</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">AI/ML</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Design System</h3>
+                        <span class="badge badge-pink">Community</span>
+                    </div>
+                    <p>Comprehensive design system and component library for projects.</p>
+                    <div class="project-stats">
+                        <span><i class="fas fa-star"></i> 2.1K</span>
+                        <span><i class="fas fa-code-branch"></i> 390</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Simple, Transparent Pricing</h2>
+            <p class="section-subtitle">Choose the perfect plan for your needs</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">0</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <p class="pricing-description">Perfect for individuals</p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited public repositories</li>
+                        <li><i class="fas fa-check"></i> 2GB storage</li>
+                        <li><i class="fas fa-check"></i> Basic analytics</li>
+                        <li><i class="fas fa-times"></i> Team collaboration</li>
+                        <li><i class="fas fa-times"></i> Priority support</li>
+                    </ul>
+                    <button class="btn btn-outline">Get Started</button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <h3>Professional</h3>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">12</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <p class="pricing-description">For growing teams</p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited repositories</li>
+                        <li><i class="fas fa-check"></i> 100GB storage</li>
+                        <li><i class="fas fa-check"></i> Advanced analytics</li>
+                        <li><i class="fas fa-check"></i> Team collaboration</li>
+                        <li><i class="fas fa-times"></i> Priority support</li>
+                    </ul>
+                    <button class="btn btn-primary">Choose Plan</button>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">99</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <p class="pricing-description">For large organizations</p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited everything</li>
+                        <li><i class="fas fa-check"></i> 1TB storage</li>
+                        <li><i class="fas fa-check"></i> Custom analytics</li>
+                        <li><i class="fas fa-check"></i> Advanced team tools</li>
+                        <li><i class="fas fa-check"></i> 24/7 Priority support</li>
+                    </ul>
+                    <button class="btn btn-outline">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Have questions? We'd love to hear from you</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>123 Tech Street, Silicon Valley, CA</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@villagecar.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>VillageCar</h4>
+                    <p>Modern platform for collaborative development.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Roadmap</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Developers</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">SDK</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 VillageCar. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
